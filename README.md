@@ -60,7 +60,12 @@ Prediction, linear regression
 > summary (model)
 > Call:
 lm(formula = Scores ~ Hours, data = grip_dataset)
-
+# Saved the scatter plot as a PNG file #
+> plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16)
+> dev.off()
+null device 
+          1
+> ![scatter_plot](https://github.com/mosalah2510/sparks_found/assets/128469983/02ab8029-e847-425d-be3f-0cd0adaad03f)
 Residuals:
     Min      1Q  Median      3Q     Max 
 -10.578  -5.340   1.839   4.593   7.265 
