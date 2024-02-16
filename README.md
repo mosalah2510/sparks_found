@@ -1,8 +1,8 @@
-# sparks_foundation
+# sparks_foundation #
 **Prediction, linear regression**
-#setting work directory#
+# setting work directory #
 > setwd ("G:/sparks foundation")
-#reading the dataset from the text document#
+# reading the dataset from the text document #
 > grip_dataset <-
 + read.table("grip_dataset.txt", header = TRUE, sep = ",")
 +    2.5     21
@@ -30,7 +30,7 @@
 23   3.8     35
 24   6.9     76
 25   7.8     86
-#summarizing statistics#
+# summarizing statistics #
    > summary (grip_dataset)
      Hours           Scores     
  Min.   :1.100   Min.   :17.00  
@@ -39,7 +39,7 @@
  Mean   :5.012   Mean   :51.48  
  3rd Qu.:7.400   3rd Qu.:75.00  
  Max.   :9.200   Max.   :95.00  
-#viewing the first few rows of the dataset#
+# viewing the first few rows of the dataset #
 > head(grip_dataset)
   Hours Scores
 1   2.5     21
@@ -48,12 +48,12 @@
 4   8.5     75
 5   3.5     30
 6   1.5     20
-#checkimg the structure of the dataset#
+# checkimg the structure of the dataset #
 > str(grip_dataset)
 'data.frame':   25 obs. of  2 variables:
  $ Hours : num  2.5 5.1 3.2 8.5 3.5 1.5 9.2 5.5 8.3 2.7 ...
  $ Scores: int  21 47 27 75 30 20 88 60 81 25 ...
-# Scatter Plot to visualise the relationship between hours and scrores#
+# Scatter Plot to visualise the relationship between hours and scrores #
 > plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16)
 # Saved the scatter plot as a PNG file #
 > plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16)
