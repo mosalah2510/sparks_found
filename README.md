@@ -32,7 +32,8 @@
 25   7.8     86
 # summarizing statistics #
    > ```summary (grip_dataset) ```
->   Hours           Scores     
+>
+ Hours           Scores     
  Min.   :1.100   Min.   :17.00  
  1st Qu.:2.700   1st Qu.:30.00  
  Median :4.800   Median :47.00  
