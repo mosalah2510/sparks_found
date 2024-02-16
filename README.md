@@ -61,7 +61,8 @@
 null device 
           1
 > ![scatter_plot](https://github.com/mosalah2510/sparks_found/assets/128469983/02ab8029-e847-425d-be3f-0cd0adaad03f)
- #predicting the score for a student studying 9.25 hours/day#
+
+ # predicting the score for a student studying 9.25 hours/day #
 > ``` model <- lm(Scores ~ Hours, data = grip_dataset) ```
 > summary (model)
 > Call:
