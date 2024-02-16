@@ -68,10 +68,10 @@ null device
 
  # predicting the score for a student studying 9.25 hours/day #
 > ``` model <- lm(Scores ~ Hours, data = grip_dataset) ```
-> summary (model)
+> 
+>``` summary (model) ```
+> 
 > Call:
-lm(formula = Scores ~ Hours, data = grip_dataset)
->Call:
 lm(formula = Scores ~ Hours, data = grip_dataset)
 
 Residuals:
