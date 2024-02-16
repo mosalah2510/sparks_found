@@ -48,7 +48,7 @@
 4   8.5     75
 5   3.5     30
 6   1.5     20
-# checkimg the structure of the dataset #
+# checking the structure of the dataset #
 > str(grip_dataset)
 'data.frame':   25 obs. of  2 variables:
  $ Hours : num  2.5 5.1 3.2 8.5 3.5 1.5 9.2 5.5 8.3 2.7 ...
