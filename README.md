@@ -87,7 +87,8 @@ F-statistic: 465.8 on 1 and 23 DF,  p-value: < 2.2e-16
 
 > #displaying the predicted score#
 > ``` cat("Predicted Score for 9.25 hours/day", predicted_score) ```
-> Predicted Score for 9.25 hours/day 92.90985>
+> Predicted Score for 9.25 hours/day 92.90985
+> 
 > *THE STUDENT'S SCORE WILL BE APPROX 92.9% IF HE STUDIES FOR 9.25 HOURS*
 # Scatter Plot With Regression Line #
 ``` ggplot(grip_dataset, aes(x = Hours, y = Scores))+ geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(x = "Hours Studied", y = "Scores Obtained")+ ggtitle("Relationship between study hours and scores") ```
