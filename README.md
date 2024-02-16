@@ -85,7 +85,8 @@ Residual standard error: 5.603 on 23 degrees of freedom
 Multiple R-squared:  0.9529,    Adjusted R-squared:  0.9509 
 F-statistic: 465.8 on 1 and 23 DF,  p-value: < 2.2e-16
 
-> #displaying the predicted score#
+> # displaying the predicted score #
+> 
 > ``` cat("Predicted Score for 9.25 hours/day", predicted_score) ```
 > Predicted Score for 9.25 hours/day 92.90985
 > 
