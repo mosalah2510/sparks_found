@@ -1,5 +1,5 @@
-# sparks_found
-Prediction, linear regression
+# sparks_foundation
+**Prediction, linear regression**
 #setting work directory#
 > setwd ("G:/sparks foundation")
 #reading the dataset from the text document#
@@ -84,5 +84,9 @@ F-statistic: 465.8 on 1 and 23 DF,  p-value: < 2.2e-16
 
 > #displaying the predicted score#
 > cat("Predicted Score for 9.25 hours/day", predicted_score)
-> Predicted Score for 9.25 hours/day 92.90985> 
- 
+> Predicted Score for 9.25 hours/day 92.90985>
+# Scatter Plot With Regression Line #
+ggplot(grip_dataset, aes(x = Hours, y = Scores))+ geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(x = "Hours Studied", y = "Scores Obtained")+ ggtitle("Relationship between study hours and scores")
+# Save the plot as PNG file #
+>ggsave("study_hours_vs_scores.png", width = 8, height = 6, units = "in", dpi = 300)
+ ![study_hours_vs_scores](https://github.com/mosalah2510/sparks_found/assets/128469983/cb9c4143-357c-4a8e-bcc6-0dc3a9d3d989)
