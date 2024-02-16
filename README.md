@@ -42,6 +42,7 @@
  Max.   :9.200   Max.   :95.00  
 # viewing the first few rows of the dataset #
 > ```head(grip_dataset) ```
+
   Hours Scores
 1   2.5     21
 2   5.1     47
@@ -51,6 +52,7 @@
 6   1.5     20
 # checking the structure of the dataset #
 > ``` str(grip_dataset) ```
+> 
 'data.frame':   25 obs. of  2 variables:
  $ Hours : num  2.5 5.1 3.2 8.5 3.5 1.5 9.2 5.5 8.3 2.7 ...
  $ Scores: int  21 47 27 75 30 20 88 60 81 25 ...
@@ -58,6 +60,7 @@
 > ```plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16) ```
 # Saved the scatter plot as a PNG file #
 > ``` plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16) ```
+> 
 >  dev.off()
 null device 
           1
