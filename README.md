@@ -2,10 +2,10 @@
 Prediction, linear regression
 #setting work directory#
 > setwd ("G:/sparks foundation")
-> #reading the dataset from the text document#
+#reading the dataset from the text document#
 > grip_dataset <-
 + read.table("grip_dataset.txt", header = TRUE, sep = ",")
-+  2.5     21
++    2.5     21
 2    5.1     47
 3    3.2     27
 4    8.5     75
@@ -48,24 +48,25 @@ Prediction, linear regression
 4   8.5     75
 5   3.5     30
 6   1.5     20
-> #checkimg the structure of the dataset#
+#checkimg the structure of the dataset#
 > str(grip_dataset)
 'data.frame':   25 obs. of  2 variables:
  $ Hours : num  2.5 5.1 3.2 8.5 3.5 1.5 9.2 5.5 8.3 2.7 ...
  $ Scores: int  21 47 27 75 30 20 88 60 81 25 ...
 # Scatter Plot to visualise the relationship between hours and scrores#
 > plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16)
-> #predicting the score for a student studying 9.25 hours/day#
-> > model <- lm(Scores ~ Hours, data = grip_dataset)
-> summary (model)
-> Call:
-lm(formula = Scores ~ Hours, data = grip_dataset)
 # Saved the scatter plot as a PNG file #
 > plot(grip_dataset$Hours, grip_dataset$Scores, main = "Scatter Plot", xlab = "Hours", ylab = "Scores", pch = 16)
-> dev.off()
+>  dev.off()
 null device 
           1
 > ![scatter_plot](https://github.com/mosalah2510/sparks_found/assets/128469983/02ab8029-e847-425d-be3f-0cd0adaad03f)
+ #predicting the score for a student studying 9.25 hours/day#
+>  model <- lm(Scores ~ Hours, data = grip_dataset)
+> summary (model)
+> Call:
+lm(formula = Scores ~ Hours, data = grip_dataset)
+>
 Residuals:
     Min      1Q  Median      3Q     Max 
 -10.578  -5.340   1.839   4.593   7.265 
@@ -82,6 +83,6 @@ Multiple R-squared:  0.9529,    Adjusted R-squared:  0.9509
 F-statistic: 465.8 on 1 and 23 DF,  p-value: < 2.2e-16
 
 > #displaying the predicted score#
-> > cat("Predicted Score for 9.25 hours/day", predicted_score)
-Predicted Score for 9.25 hours/day 92.90985> 
+> cat("Predicted Score for 9.25 hours/day", predicted_score)
+> Predicted Score for 9.25 hours/day 92.90985> 
  
