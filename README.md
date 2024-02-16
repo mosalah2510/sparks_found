@@ -66,8 +66,7 @@ null device
 > summary (model)
 > Call:
 lm(formula = Scores ~ Hours, data = grip_dataset)
->
-Residuals:
+> Residuals:
     Min      1Q  Median      3Q     Max 
 -10.578  -5.340   1.839   4.593   7.265 
 
