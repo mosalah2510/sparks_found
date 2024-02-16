@@ -1,7 +1,7 @@
 # sparks_foundation #
 **Prediction, linear regression**
 # setting work directory #
-> setwd ("G:/sparks foundation")
+> ```setwd ("G:/sparks foundation") ```
 # reading the dataset from the text document #
 > grip_dataset <-
 + read.table("grip_dataset.txt", header = TRUE, sep = ",")
